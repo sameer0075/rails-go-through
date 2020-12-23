@@ -1,7 +1,40 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+10.times do |blog|
+	Blog.create!(
+		title:"Created Blog #{blog}",
+		body:"zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		"
+	)
+end
+
+puts("10 Blogs Created")
+
+5.times do |skill|
+	Skill.create!(
+		title:"Created Skill #{skill}",
+		percent_utilized:50
+	)
+end
+
+puts("5 Skills Created")
+
+9.times do |portfolio|
+	Portfolio.create!(
+		title:"Created Blog #{portfolio}",
+		subtitle:"subtitle created #{portfolio}",
+		body:"zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx 
+		zzzzzzzzzzzzzzzzzahhhhskbsdjkcbsdjkbsjkdbnxbsnmx",
+		main_image:"main image #{portfolio}",
+		thumb_image:"thumb image #{portfolio}"
+	)
+end
+
+puts("9 Portfolios Created")
