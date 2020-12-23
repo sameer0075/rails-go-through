@@ -4,5 +4,6 @@
 	<p><%=item.subtitle%></p>
 	<p><%=item.body%></p>
 	<p><%=item.main_image%></p>
-	<p><%=item.thumb_image%></p>
+	<p><%=item.thumb_image if !item.thumb_image.nil? %></p>
 <% end %>
+<button><%= link_to 'Create', new_portfolio_path(@portfolio) %></button>
