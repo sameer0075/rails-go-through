@@ -5,4 +5,11 @@ def self.angular
 end
 
 scope :rails,->{where(subtitle:'Ruby on Rails')}
+
+after_initialize :set_defaults
+
+def set_defaults
+	self.main_image ||= "Main Image"
+	self.thumb_image ||= "Thumb Image"
+end
 end
