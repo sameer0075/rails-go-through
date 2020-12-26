@@ -1,0 +1,6 @@
+<h1>Showing Portfolio</h1>
+<p><%= @portfolio.title %></p>
+<p><%= @portfolio.subtitle %></p>
+<p><%= @portfolio.body %></p>
+<button><%= link_to 'Back', portfolios_path() %></button>
+<button><%= link_to 'Edit', edit_portfolio_path(@portfolio) %></button>
