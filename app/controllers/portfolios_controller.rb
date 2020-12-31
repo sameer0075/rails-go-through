@@ -2,6 +2,7 @@ class PortfoliosController < ApplicationController
 
 def index
 	@portfolio = Portfolio.all
+  @pagetitle = 'My Portfolios'
   #@portfolio = Portfolio.rails
 end
 
@@ -16,6 +17,7 @@ end
 
 def show
 	@portfolio = Portfolio.find(params[:id])
+  @pagetitle = @portfolio.title
 end
 
 def create
